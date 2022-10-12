@@ -2,7 +2,7 @@
 
 ## Linear Regression to Predict MPG
 
-and write a short summary using a screenshot of the output from the linear regression, and address the following questions:
+Purpose of the analysis: We fitted a linear model to see which variables (metrics of the car design) were adequate predictors of miles per gallon (fuel efficiency). 
 
 Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
 Is the slope of the linear model considered to be zero? Why or why not?

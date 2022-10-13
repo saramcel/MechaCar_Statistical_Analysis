@@ -2,25 +2,38 @@
 
 ## Linear Regression to Predict MPG
 
-Purpose of the analysis: We fit a linear model to see which variables (metrics of the car design) were adequate predictors of miles per gallon (fuel efficiency). 
+Purpose of the analysis: To fit a linear model to see which variables (metrics of the car design) were adequate predictors of miles per gallon (fuel efficiency). 
 
 - Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
   - According to the results of the linear model in R, when we predict fuel efficiency using all of the metrics as coefficients, only ground clearance and vehicle length are highly significant. The vehicle weight also appears to contribute to fuel efficiency, but not as much as the other two significant results. 
+
+**Results of Linear Model with Five Predictors**
+
+![image](https://github.com/saramcel/MechaCar_Statistical_Analysis/blob/a7cfe8de3aa9bd25b3f2eca026c5af5a9cbf26ac/Resources/LinearModelResults.png)
+
 - Is the slope of the linear model considered to be zero? Why or why not?
   - The slope of the linear model for fuel efficiency would not be considered to equal zero because there are two very significant slopes, one for the vehicle length coefficient (Estimate = 6.267) and one for ground clearance (Estimate = 3.546). The slope for the coefficient vehicle weight is estimated to be .001245. 
+
 - Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
-  - The model may be over-fitted to this particular dataset, because we are using so many coefficients. Models that are over-fitted might be too tailored to the sample data and not generalizable to a broader population. The R-squared value is high (0.7149) in the multiple regression model with all five coefficients. When I created a model with only the two most significant predictors, the R-squared value went down (0.674), but not very much. The second model might be more useful to predict mpg of MechaCar prototypes. 
+  - The model may be over-fitted to this particular dataset because we are using so many coefficients. Models that are over-fitted might be too tailored to the sample data and not generalizable to a broader population. The R-squared value is high (0.7149) in the multiple regression model with all five coefficients. When I created a model with only the two most significant predictors, the R-squared value went down (0.674), but not very much. The second model might be more useful to predict mpg of MechaCar prototypes. 
+
+**Results of Linear Model with Two Predictors**
+
+![image2](https://github.com/saramcel/MechaCar_Statistical_Analysis/blob/a7cfe8de3aa9bd25b3f2eca026c5af5a9cbf26ac/Resources/LinearModelResults2.png)
 
 ## Summary Statistics on Suspension Coils
 
-and write a short summary using screenshots from your total_summary and lot_summary dataframes, and address the following question:
+Purpose of the analysis: To summarize the data on suspension coils overall and from differen tmanufacturing lots so that we can determine whether they meet technical specifications.
 
-The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+- The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+  - The overall summary table suggests that the specification is met because 
 
-*Overall Summary Table*
+**Overall Summary Table**
+
 ![This is an image](https://github.com/saramcel/MechaCar_Statistical_Analysis/blob/fa8efe55a2343b4d5fd3b528238d899d42007acb/Resources/OverallTable.png)
 
-*Manufacturing Lot Summary Table*
+**Manufacturing Lot Summary Table**
+
 ![This is an image](https://github.com/saramcel/MechaCar_Statistical_Analysis/blob/fa8efe55a2343b4d5fd3b528238d899d42007acb/Resources/LotsTable.png)
 
 ## T-Tests on Suspension Coils

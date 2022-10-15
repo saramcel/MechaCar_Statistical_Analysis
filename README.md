@@ -12,7 +12,7 @@ Purpose of the analysis: To fit a linear model to see which variables (metrics o
 ![image](https://github.com/saramcel/MechaCar_Statistical_Analysis/blob/a7cfe8de3aa9bd25b3f2eca026c5af5a9cbf26ac/Resources/LinearModelResults.png)
 
 - Is the slope of the linear model considered to be zero? Why or why not?
-  - The slope of the linear model for fuel efficiency would not be considered to equal zero because there are two very significant slopes, one for the vehicle length coefficient (Estimate = 6.267) and one for ground clearance (Estimate = 3.546). The slope for the coefficient vehicle weight is estimated to be .001245. 
+  - The slope of the linear model for fuel efficiency would not be considered to equal zero because there are non-zero slope estimates in the model. The estimates for all coefficients would have to equal zero for the slope of the entire model to be equal to zero. 
 
 - Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
   - The model may be over-fitted to this particular dataset because we are using so many coefficients. Models that are over-fitted might be too tailored to the sample data and not generalizable to a broader population. The R-squared value is high (0.7149) in the multiple regression model with all five coefficients. When I created a model with only the two most significant predictors, the R-squared value went down (0.674), but not very much. The second model might be more useful to predict mpg of MechaCar prototypes. 

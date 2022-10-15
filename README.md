@@ -1,4 +1,4 @@
-# MechaCar_Statistical_Analysis
+# MechaCar Statistical Analysis
 
 ## Linear Regression to Predict MPG
 
@@ -83,5 +83,5 @@ We can use A/B testing to quantify how the MechaCar performs against the competi
 - What statistical test would you use to test the hypothesis? And why?
   - Because miles per gallon is a continuous variable, we can use two-sample t-tests or a two-way ANOVA. With two-sample t-tests, we would have to run one test to compare the city mpg of MechaCar and the competition, and then another test to compare the highway mpg of MechaCar and the competition. With the two-way ANOVA, we can protect from type 1 error by running a single test that includes MechaCar and the competition as factors, and highway and city mpg as treatment levels. The two-way ANOVA is what we will use. 
 - What data is needed to run the statistical test?
-  - We will need a data measuring mpg from a large number of MechaCars and the competition from driving in both the city and on the highway. In order to meet the test assumptions, the mpg measurements should be normally distibuted, and the variance of each group should be homogeneous.  
+  - We will need a data measuring mpg from large samples of MechaCars and the competition from driving in both the city and on the highway. In order to meet the test assumptions, the mpg measurements should be normally distibuted, and the variance of each group should be homogeneous.  
 

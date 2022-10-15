@@ -72,17 +72,16 @@ Neither Lot 1 nor Lot 2 are significantly different from the population mean PSI
 Lot 3 average PSI could be considered significantly different from the population mean PSI of 1,500. The t-test has a low p-value (p = 0.04) that is signifcant at an alpha level of 0.05. As discussed earlier, the alpha level could be set to a larger number (e.g. 0.1) because the purpose of our analysis is quality control. The confidence interval for Lot 3 is much wider than the confidence intervals for Lot 1 or Lot 2. 
 
 ## Study Design: MechaCar vs Competition.
-Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
-In your description, address the following questions:
-What metric or metrics are you going to test?
-What is the null hypothesis or alternative hypothesis?
-What statistical test would you use to test the hypothesis? And why?
-What data is needed to run the statistical test?
 
-You will earn a perfect score for Deliverable 4 by completing all requirements below:
-The statistical study design has the following:
-A metric to be tested is mentioned (5 pt)
-A null hypothesis or an alternative hypothesis is described (5 pt)
-A statistical test is described to test the hypothesis (5 pt)
-The data for the statistical test is described (5 pt)
+We can use A/B testing to quantify how the MechaCar performs against the competition. For many consumers, fuel efficiency is key. The price of fuel in an uncertain global economy can be a determining factor in which car consumers purchase, especially consumers who have to commute to their jobs. 
+
+- What metric or metrics are you going to test?
+  - City and highway miles per gallon (mpg) for the MechaCar model of choice, compared with the competition's car model of choice. 
+- What is the null hypothesis or alternative hypothesis?
+  - H<sub>0</sub>: The null hypothesis is that there will be no difference between the mpg value for MechaCar and the value for the competition.
+  - H<sub>a</sub>: The alternative hypothesis is that there will be a difference between the mpg value for MechaCar and the value for the competition. 
+- What statistical test would you use to test the hypothesis? And why?
+  - Because miles per gallon is a continuous variable, we can use two-sample t-tests or a two-way ANOVA. With two-sample t-tests, we would have to run one test to compare the city mpg of MechaCar and the competition, and then another test to compare the highway mpg of MechaCar and the competition. With the two-way ANOVA, we can protect from type 1 error by running a single test that includes MechaCar and the competition as factors, and highway and city mpg as treatment levels. The two-way ANOVA is what we will use. 
+- What data is needed to run the statistical test?
+  - We will need a data measuring mpg from a large number of MechaCars and the competition from driving in both the city and on the highway. In order to meet the test assumptions, the mpg measurements should be normally distibuted, and the variance of each group should be homogeneous.  
 
